@@ -1,0 +1,42 @@
+.heading {
+    color: red;
+}
+
+
+.container {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    align-items: center;
+    text-align: center;
+    padding: 0px 50px 0px 50px;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-weight: 700;
+    transition: all 0.3s;
+    cursor: pointer;
+
+}
+.logo:hover {
+    text-decoration: underline;
+}
+
+.darkmodeToggler {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.darkmodeToggler img {
+    padding-right: 10px;
+}
+.darkmodeToggler p {
+    font-size: 17px;
+}

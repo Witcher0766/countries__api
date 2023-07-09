@@ -1,25 +1,71 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
 import './App.css';
+import styles from './styles/styles.module.css';
+
+import axios from 'axios';
+import { BrowserRouter as Router,Routes, Route, Link } from 'react-router-dom';
+import Catalogue from './components/Catalogue';
+
+import CountryPage from './components/CountryPage';
+import Layout from './components/Layout';
+
 
 function App() {
+  const baseURL = "https://restcountries.com/v3.1/all";
+  const [countryData, setCountryData] = useState([]);
+
+
+  React.useEffect(() => {
+    axios.get(baseURL).then((response) => {
+      setCountryData(response.data);
+    });
+  }, []);
+
+  React.useEffect(() => {
+    localStorage.setItem("countries", JSON.stringify(countryData))
+  }, [countryData]);
+
+
+  // console.log(countryData);
+
+  // setting up the darkmode 
+  const [darkMode, setDarkMode] = useState(false);
+
+  function toggleDarkMode() {
+    setDarkMode(prevMode => prevMode = !prevMode)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <Router>
+     <Routes>
+     <Route element={
+                    <Layout 
+                        toggleDarkMode={toggleDarkMode}
+                        darkMode={darkMode} 
+                    />
+                }>
+                    <Route
+                        path="/"
+                        element={
+                            <Catalogue
+                                darkMode={darkMode}
+                                countryData={countryData}
+                            />
+                        }
+                    />
+                    <Route
+                        path="/:cca3"
+                                darkMode={darkMode}
+                        element={<CountryPage  />}
+                    />
+                </Route>
+            </Routes>
+   </Router>
   );
 }
 
 export default App;
+
+
+
