@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/countries__api/static/css/main.18acdff4.css",
-    "main.js": "/countries__api/static/js/main.e553669d.js",
-    "static/media/dark-empty.svg": "/countries__api/static/media/dark-empty.c97af4fd7858b736ad29046a75a73b2a.svg",
-    "static/media/close.svg": "/countries__api/static/media/close.f9a81f7c5b4e80d1c2350c626a885d06.svg",
-    "static/media/d-close.svg": "/countries__api/static/media/d-close.a82ebe2df314034e479209f5b743f540.svg",
-    "index.html": "/countries__api/index.html",
-    "static/media/arrow.svg": "/countries__api/static/media/arrow.d7e34f8df5890f91bceea55f63a59a1b.svg",
-    "static/media/d-arrow.svg": "/countries__api/static/media/d-arrow.9f50a49dedf67b944b805950c0dba07a.svg",
-    "static/media/back.svg": "/countries__api/static/media/back.65f932df4d77471b37f8dc634bea167b.svg",
-    "static/media/d-back.svg": "/countries__api/static/media/d-back.805110361234403c7958d17f95be897e.svg",
-    "static/media/dark-full.svg": "/countries__api/static/media/dark-full.f6e3ec545a1692ccb1e4c82c5816408d.svg",
-    "main.18acdff4.css.map": "/countries__api/static/css/main.18acdff4.css.map",
-    "main.e553669d.js.map": "/countries__api/static/js/main.e553669d.js.map"
+    "main.css": "/static/css/main.18acdff4.css",
+    "main.js": "/static/js/main.64a2d6ab.js",
+    "static/media/dark-empty.svg": "/static/media/dark-empty.c97af4fd7858b736ad29046a75a73b2a.svg",
+    "static/media/close.svg": "/static/media/close.f9a81f7c5b4e80d1c2350c626a885d06.svg",
+    "static/media/d-close.svg": "/static/media/d-close.a82ebe2df314034e479209f5b743f540.svg",
+    "index.html": "/index.html",
+    "static/media/arrow.svg": "/static/media/arrow.d7e34f8df5890f91bceea55f63a59a1b.svg",
+    "static/media/d-arrow.svg": "/static/media/d-arrow.9f50a49dedf67b944b805950c0dba07a.svg",
+    "static/media/back.svg": "/static/media/back.65f932df4d77471b37f8dc634bea167b.svg",
+    "static/media/d-back.svg": "/static/media/d-back.805110361234403c7958d17f95be897e.svg",
+    "static/media/dark-full.svg": "/static/media/dark-full.f6e3ec545a1692ccb1e4c82c5816408d.svg",
+    "main.18acdff4.css.map": "/static/css/main.18acdff4.css.map",
+    "main.64a2d6ab.js.map": "/static/js/main.64a2d6ab.js.map"
   },
   "entrypoints": [
     "static/css/main.18acdff4.css",
-    "static/js/main.e553669d.js"
+    "static/js/main.64a2d6ab.js"
   ]
 }
