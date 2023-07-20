@@ -10,10 +10,10 @@ const Header = (props) => {
         <header>
             <div className={styles.container}>
                 <Link className={styles.logo} to="/">Where in the world?</Link>
-                <div className={styles.darkmodeToggler} onClick={props.clickHandler}>
+                {/* <div className={styles.darkmodeToggler} onClick={props.clickHandler}>
                 <img src={props.darkMode ? darkFull : darkEmpty} alt="Dark mode image" />
                 <p>{props.darkMode ? "Light" : "Dark"}Mode</p>
-                </div>
+                </div> */}
             </div>
         </header>
     )

@@ -20,9 +20,10 @@ const Catalogue = (props) => {
         setSearchValue(event.target.value)
     }
 
-    // const toggleSelect = () => {
+    function toggleSelect() {
+        document.getElementById("select__options").classList.toggle("hidden")
+    }
 
-    // }
 
 
     // state keeping data of the country to show 
@@ -93,16 +94,15 @@ const Catalogue = (props) => {
 
                     <div className="select-wrapper">
                         {/* <div className="select" id="select" onClick={toggleSelect}> */}
-                        <div className="select">
-                        <p>Filter by Region</p>  
-                      <select name="Slect Country" id="select__options">
-                            <option >All</option>
-                            <option onClick={() => filterRegion("Asia")} className="select__option"  >Asia</option>
-                            <option onClick={() => filterRegion("Africa")} className="select__option" >Africa</option>
-                            <option onClick={() => filterRegion("America")} className="select__option" >America</option>
-                            <option onClick={() => filterRegion("Europe")} className="select__option" >Europe</option>
-                            <option onClick={() => filterRegion("Oceania")} className="select__option" >Oceania</option>
-                        </select>
+                        <div className="select" id="select" onClick={toggleSelect} >
+                            <p> Filter by Region</p> <img className="select__arrow" src={arrow} alt="Select arrow" />
+                            <ul className="select__options hidden" id="select__options">
+                                <li onClick={() => filterRegion("Africa")} className="select__option">Africa</li>
+                                <li onClick={() => filterRegion("America")} className="select__option">America</li>
+                                <li onClick={() => filterRegion("Asia")} className="select__option">Asia</li>
+                                <li onClick={() => filterRegion("Europe")} className="select__option">Europe</li>
+                                <li onClick={() => filterRegion("Oceania")} className="select__option">Oceania</li>
+                            </ul>
                         </div>
 
                     </div>

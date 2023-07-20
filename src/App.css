@@ -9,38 +9,69 @@
 }
 
 .country-search {
-    padding: 10px 70px 10px 10px;
+    padding: 20px 55px 20px 25px;
     font-size: 16px;
     border-radius: 5px;
     border: none;
-    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 
 .select-wrapper {
-    /* border: 2px solid green; */
-    padding: 5px;
+    display: flex;
+    align-items: center;
+    /* border: 2px solid red; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
 }
+
+/* .select {
+    font-size: 16px;
+} */
 
 .select {
-    /* border: 2px solid green; */
-    font-size: 16px;
+    position: relative;
+        padding: 20px 55px 20px 25px;
+        width: 178px;
+        box-sizing: border-box;
+        font-size: 14px;
+        border-radius: 3px;
+        cursor: pointer;
+        align-items: center;
 }
 
-.select p {
-    font-size: 18px;
+.select__arrow {
+    position: absolute;
+    top: 21px;
+    right: 30px;
 }
 
-.select select {
+.select__options {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 15px 18px;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 5px;
-    cursor: pointer;
-    transition: all 0.3s;
+    border-radius: 3px;
+    box-sizing: border-box;  
+    background-color: whitesmoke; 
+}
+.hidden {
+    display: none;
 }
 
+.select__options li {
+    list-style: none;
+}
+.select__options li:hover {
+    border: 2px solid black;
+    background-color: white;
+}
+
+.select__option {
+    padding: 8px;
+    cursor: pointer;
+}
 
 /* country card  */
 
@@ -59,10 +90,8 @@
     height: 50vh;
     margin: 20px;
     display: flex;
-    flex-direction: column;
     text-align: center;
     transition: all 0.3s;
-    
 }
 .countryCard:hover {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -85,15 +114,17 @@
     /* border: 2px solid red; */
     padding: 10px;
     text-decoration: none;
+    /* border-bottom: white; */
 }
 
 .countrycard__info h2{
-    font-size: 20px;
-    padding-bottom: 10px;
+    font-size: 26px;
+    padding-bottom: 8px;
+
 }
 
 .country__data {
-    font-size: 16px;
+    font-size: 20px;
     color: grey;
 }
 
@@ -118,38 +149,50 @@
 
 .country {
     /* border: 2px solid red; */
+    width: 80%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding: 30px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .country__flag img{
-    width: 70%;
+    width: 100%;
     height: 50vh;
 }
 
 .country__info {
-    font-size: 18px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-left: 10px;
+}
+.country__info p {
+   font-size: 24px;
 }
 
 
 .btn-back {
     padding: 0px 0px 10px 0px;
+    /* border: 2px solid red; */
+    align-items: center;
 }
 
 .btn-back button {
     padding: 5px 10px 5px 10px;
     border: none;
-    border-radius: 10px;
     font-size: 14px;
     cursor: pointer;
     transition: all 0.3s;
-    background-color: skyblue;
+    background-color: whitesmoke;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .btn-back button:hover {
-    background-color: rgb(52, 181, 232);
+    background-color: white;
 }
+
+
+

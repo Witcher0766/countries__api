@@ -36,11 +36,11 @@ const CountryPage = (props) => {
     return (
 
         <div className="country-page">
-        <div className="container">
+        
             <Link to={"/"}>
                 <div className="btn-back">
                     {/* <img src={props.darkMode ? dBack : back} alt="Back" /> Back */}
-                    <button>⬅️back</button>
+                    <button>⬅ back</button>
                 </div>
             </Link>
             {thisCountry.length == 0 ? <h2>Loading...</h2> :
@@ -89,7 +89,7 @@ const CountryPage = (props) => {
                     </div>
                 </div>
             }
-        </div>
+        
     </div>
     )
 }

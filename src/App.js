@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import React, { useEffect, useState } from 'react';
 import './App.css';
+import './styles/media.css';
 import styles from './styles/styles.module.css';
 
 import axios from 'axios';

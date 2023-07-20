@@ -1,0 +1,110 @@
+
+
+
+
+@media screen and (max-width: 1256px) {
+
+    .country-page {
+       margin-top: 40px;
+       height: 100vh;
+    }
+   .country {
+    flex-direction: column;
+   }
+
+   .country__info {
+    /* border: 2px solid red; */
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.country__info p {
+    font-size: 24px;
+}
+
+}
+
+@media screen and (max-width: 530px) {
+    .country {
+        width: 100%;
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 400px) {
+  
+    .country__flag img {
+        height: 40vh;
+    }
+}
+
+
+@media screen and (max-width: 1260px) {
+    .countryCard { 
+        width: 30%;
+        height: 60vh;
+    }
+
+    .countrycard__info h2{
+        font-size: 30px;
+    }
+    
+    .country__data {
+        font-size: 24px;
+    }
+}
+
+
+@media screen and (max-width: 1201px) {
+    .countryCard {
+        width: 40%;
+        height: 70vh;
+    }
+}
+@media screen and (max-width: 915px) {
+    .countryCard {
+        height: 60vh;
+    }
+}
+
+
+
+@media screen and (max-width: 760px) {
+    .countryCard {
+        width: 70%;
+        height: 70vh;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .countryCard {
+        width: 80%;
+        height: 60vh;
+    }
+
+    .sub-container {
+        flex-direction: column;
+        gap: 1rem;
+    }    
+}
+
+
+@media screen and (max-width: 400px) {
+    .countryCard {
+        height: 50vh;
+    }
+
+    .countrycard__info h2{
+        font-size: 26px;
+    }
+    
+    .country__data {
+        font-size: 20px;
+    }  
+}
+
+@media screen and (max-width: 380px) {
+    .countryCard {
+        width: 85%;
+    }
+}
